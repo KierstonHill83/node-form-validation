@@ -7,24 +7,12 @@
 
   <div class="container">
 
-    <h1>Add A Puppy</h1>
-
-    <div class="alert alert-danger" role="alert">
-      {% for error in errors %}
-      <p>{{error}}</p>
-      {% endfor %}
-    </div>
-
-    <form method="POST" action="/submit">
-      <div class="form-group">
-        <label for="puppy-name">Puppy Name</label>
-        <input type="text" class="form-control" id="puppy-name" name="puppyName" placeholder="Puppy Name">
-      </div>
-       <div class="form-group">
-        <label for="puppy-id">Puppy ID</label>
-        <input type="text" class="form-control" id="puppy-id" name="puppyID" placeholder="Puppy ID">
-      </div>
-      <button type="submit" class="btn btn-success">Create Puppy</button>
+    <form method="POST" action="/addDog">
+      <button type="submit" class="btn btn-lg btn-success">Add a Puppy</button>
+    </form>
+    <br><br>
+    <form method="POST" action="/addPerson">
+      <button type="submit" class="btn btn-lg btn-info">Add a Person</button>
     </form>
 
   </div>

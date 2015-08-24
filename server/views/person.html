@@ -7,7 +7,7 @@
 
   <div class="container">
 
-    <h1>Showing Puppies</h1>
+    <h1>Showing Person</h1>
 
     <div class="alert alert-success" role="alert">
       <p>{{success}}</p>
@@ -22,10 +22,10 @@
           </tr>
         </thead>
         <tbody>
-          {% for puppy in puppies %}
+          {% for person in people %}
           <tr>
-            <td>{{puppy.name}}</td>
-            <td>{{puppy.id}}</td>
+            <td>{{person.name}}</td>
+            <td>{{person.hobby}}</td>
           </tr>
           {% endfor %}
         </tbody>
